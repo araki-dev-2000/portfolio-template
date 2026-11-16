@@ -99,6 +99,19 @@ https://supabase.com/ から、GitHubアカウントで登録します。
 
 ---
 
+## インストール時に出る警告について
+
+`npm install` のあとに、`npm warn ...` の警告や、「vulnerabilities」の表示が出ることがあります。次のものは、**そのままで大丈夫**です。
+
+- `deprecated`（古くなった、という表示）
+- `moderate severity vulnerabilities`（開発用のチェックツールに関する注意）
+  **`npm audit fix --force` は、実行しないでください。** アプリが動かなくなることがあります。
+- `New major version of npm available`（npm の新しい版の案内）
+
+インストールには、数分かかることがあります。
+
+赤い `npm error` が出たときは、エラーの**全文**をチャットで送ってください。
+
 ## 秘密の情報の扱い
 
 - `.env.local` というファイルに、データベースの接続文字列などを書きます（第3週）。このファイルは `.gitignore` に入っていて、GitHubには上がりません。**上がっていないことを、最初のコミットの前に確認してください。**
